@@ -108,18 +108,3 @@ if (contactForm) {
 
 
 
-// Contact Form Logic (Part 3, Step 3: Contact Page)
-const contactForm = document.getElementById("contact-form");
-
-if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
-        // Form ko submit hone se rokta hai, jaisa ki guide mein bataya gaya hai
-        e.preventDefault(); 
-        
-        // Success message dikhata hai
-        alert("Message sent successfully! 😊");
-        
-        // Form ke fields ko khaali karta hai
-        contactForm.reset(); 
-    });
-}
